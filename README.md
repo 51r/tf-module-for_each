@@ -8,7 +8,7 @@ The meta-argument **for-each** can be used to create multiple pre-defined module
 The sample in the repo uses **random_pet** module. 
 
 # Prerequisite
-You need to have [Terraform CLI >0.12](https://learn.hashicorp.com/tutorials/terraform/install-cli) installed on you workstation. 
+You need to have [Terraform CLI >0.13](https://learn.hashicorp.com/tutorials/terraform/install-cli) installed on you workstation. 
 
 # How to use the repo
 
