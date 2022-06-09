@@ -1,19 +1,24 @@
 # Terraform Module with for_each feature
 This repo contains simple code that it can demonstrate the use of meta-argument [for-each](https://www.terraform.io/language/meta-arguments/for_each) . 
 
-It creates 3 random_pet modules with the following names:
+It creates 3 local files:
 
-`module.pet["first"].random_pet.pet`
+**filename - content**
 
-`module.pet["second"].random_pet.pet`
+`1.txt` - `file number 1`
 
-`module.pet["third"].random_pet.pet`
+`2.txt` - `file number 2`
+
+`3.txt` - `file number 3`
+
+Terraform will create the local files based on the values provided in the sample variable map. 
+
 
 # Purpose of for-each
 
-The meta-argument **for-each** can be used to create multiple pre-defined modules from a set or map instead of creating them manually and duplicating the modules. It has been added to Terraform in version 0.12.
+The meta-argument **for-each** is simillar to **count**, but it creates a map instead of a list index and each resource is defined in the map which makes the resources more easily managed for future modifications or changes.
 
-The sample in the repo uses **random_pet** module. 
+The sample in the repo uses **local** module. 
 
 # Prerequisite
 You need to have [Terraform CLI >0.13](https://learn.hashicorp.com/tutorials/terraform/install-cli) installed on you workstation. 
