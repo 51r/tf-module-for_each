@@ -1,10 +1,13 @@
 # Terraform Module with for_each feature
-This repo contains simple code that it can demonstrate the use of meta-argument [for-each](https://www.terraform.io/language/meta-arguments/for_each) . It creates 3 random_pet modules with names 
-```
-module.pet["first"].random_pet.pet
-module.pet["second"].random_pet.pet
-module.pet["third"].random_pet.pet
-```
+This repo contains simple code that it can demonstrate the use of meta-argument [for-each](https://www.terraform.io/language/meta-arguments/for_each) . 
+
+It creates 3 random_pet modules with the following names:
+
+`module.pet["first"].random_pet.pet`
+
+`module.pet["second"].random_pet.pet`
+
+`module.pet["third"].random_pet.pet`
 
 # Purpose of for-each
 
